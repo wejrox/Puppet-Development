@@ -17,55 +17,55 @@ class packages{
 
 	package { 'mysql' :
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'vncserver':
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'tmux' : 
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'dia2code' : 
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'lynx' : 
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'gcc' : 
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'gdb' : 
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'cgdb' : 
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'vim' : 
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 
 	package { 'emacs' : 		
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 	package { 'sshfs' :
 		ensure => 'installed', 
-		enable = true,
+		enable => true,
 	}
 }
