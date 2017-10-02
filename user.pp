@@ -41,10 +41,20 @@ class usergroup {
 	}
 
 	user { 'wilma' :
-	ensure => present,
-		uid => '10030510',
-		home => '/home/wilma',
-		managehome => true, 
-		groups => ['trucks', 'cars', 'ambulances'],
+		ensure 			=> present,
+		uid 			=> '10030510',
+		home 			=> '/home/wilma',
+		managehome 		=> true, 
+		groups 			=> ['trucks', 'cars', 'ambulances'],
+		shell 			=> '/bin/bash',
+		purge_ssh_keys 	=> true,
+	}
+
+	# SSH Key for wilma's account
+	ssh_authorized_key { 'wilmaKey' :
+		ensure 	=> present,
+		user 	=> 'wilma',
+		type 	=> 'ssh-rsa', 
+		key 	=> 'ThisIsWilmasKeyAbCdE',
 	}
 }
