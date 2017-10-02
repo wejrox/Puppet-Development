@@ -24,14 +24,14 @@ class usergroup {
 	# Create users 
 	user { 'becca' :
 		ensure 		=> present,
-		uid 		=> '10010510'
+		uid 		=> '10010510',
 		home 		=> '/home/becca', 
 		managehome 	=> true,
 		groups	 	=> ['sysadmin', 'cars'],
 		shell 		=> '/bin/bash',
 	}
 
-	user { 'fred':
+	user { 'fred' :
 		ensure 		=> present,
 		uid 		=> '10020510',
 		home 		=> '/home/fred', 
@@ -40,7 +40,7 @@ class usergroup {
 		shell 		=> '/bin/csh',
 	}
 
-	user { 'wilma':
+	user { 'wilma' :
 	ensure => present,
 		uid => '10030510',
 		home => '/home/wilma',
