@@ -64,8 +64,19 @@ class packages{
 		ensure => 'installed', 
 		enable => true,
 	}
+
 	package { 'sshfs' :
 		ensure => 'installed', 
 		enable => true,
+	}
+
+	package { 'csh' :
+		ensure => 'installed',
+		enable => true,
+	}
+
+	package { 'puppet-lint' :
+		ensure 		=> '1.1.0',
+		provider 	=> 'gem',
 	}
 }
