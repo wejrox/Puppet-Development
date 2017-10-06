@@ -4,7 +4,7 @@ class iniConfig {
 		changes => [
 			"set runinterval=20m",
 			],
-		require => File['puppet.conf'],
+		require => File['/etc/puppetlabs/puppet/puppet.conf'],
 	}
 
 	augeas { 'runlevel': 
