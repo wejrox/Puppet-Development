@@ -1,12 +1,12 @@
 # Ensures that all packages specified are installed and installed
 class packages{
 	package { 'wget' :
-		ensure => 'installed',
-		provider => 'yum',
+		ensure 		=> 'installed',
+		provider 	=> 'yum',
 	}
 
 	exec { 'getDeps' :
-		command => "yum-config-manager --enable rhui-REGION-rhel-server-optional",
+		command => 'yum-config-manager --enable rhui-REGION-rhel-server-optional',
 	}
 
 	exec { 'getDia2Code' :
