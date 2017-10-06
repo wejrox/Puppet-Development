@@ -1,5 +1,8 @@
 # Creates all users requested
 class user {
+	require groups
+	require packages
+
 	user { 'becca' :
 		ensure 		=> present,
 		uid 		=> '10010510',
