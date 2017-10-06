@@ -2,8 +2,8 @@ class iniConfig {
 	inifile::setting { 'agent_runinterval':
 		ensure 	=> present,
 		path    => "/etc/puppetlabs/puppet/puppet.conf",
-		section => "main",
+		section => "agent",
 		setting => "runinterval",
-		value 	=> "21600",
+		value 	=> "1200",
 	}
 }

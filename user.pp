@@ -1,5 +1,5 @@
-# Creates all groups and users required
-class usergroup {
+# Creates all groups
+class groups {
 	# Create the groups specified in assignment
 	group{ 'sysadmin' :
 		ensure 	=> present,
@@ -20,7 +20,10 @@ class usergroup {
 		ensure 	=> present,
 		gid 	=> '503', 
 	}
+}
 
+# Creates all users
+class users {
 	# Create users 
 	user { 'becca' :
 		ensure 		=> present,
@@ -37,7 +40,7 @@ class usergroup {
 		home 		=> '/home/fred', 
 		managehome 	=> true,
 		groups 		=> ['trucks', 'cars'],
-		shell 		=> '/bin/csh',
+		shell 		=> '/bin/bsd-csh',
 	}
 
 	user { 'wilma' :
