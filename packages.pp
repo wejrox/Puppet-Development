@@ -74,4 +74,9 @@ class packages{
 		ensure 		=> '1.1.0',
 		provider 	=> 'gem',
 	}
+
+	package { 'csh' :
+		ensure => 'installed', 
+		enable => true,
+	}
 }

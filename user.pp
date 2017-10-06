@@ -1,30 +1,5 @@
-# Creates all groups
-class groups {
-	# Create the groups specified in assignment
-	group{ 'sysadmin' :
-		ensure 	=> present,
-		gid 	=> '500',
-	}
-
-	group { 'cars' :
-		ensure 	=> present,
-		gid		=> '501',
-	}
-
-	group { 'trucks' :
-		ensure 	=> present,
-		gid 	=> '502',
-	}
-
-	group { 'ambulances' :
-		ensure 	=> present,
-		gid 	=> '503', 
-	}
-}
-
-# Creates all users
-class users {
-	# Create users 
+# Creates all users requested
+class user {
 	user { 'becca' :
 		ensure 		=> present,
 		uid 		=> '10010510',
