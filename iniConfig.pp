@@ -2,13 +2,12 @@ class iniConfig {
 	augeas { 'agent_runinterval_exists':
 		context => "/etc/puppetlabs/puppet/puppet.conf/agent",
 		changes => "set runinterval 20m",
-		onlyif 	=> "grep runinterval /etc/puppetlabs/puppet/puppet.conf",
 	}
 
 	augeas { 'agent_runinterval_non-exist':
 		context => "/etc/puppetlabs/puppet/puppet.conf/agent",
 		changes => "set runinterval 20m",
-		unless 	=> "grep runinterval /etc/puppetlabs/puppet/puppet.conf",
+		onlyif 	=> "grep runinterval /etc/puppetlabs/puppet/puppet.conf",
 	}
 
 	augeas { 'runlevel': 
