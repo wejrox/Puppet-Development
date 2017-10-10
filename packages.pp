@@ -19,11 +19,11 @@ class packages{
 	}
 
 	# Install fuse-sshfs
+	package { 'fuse' : ensure => installed, }
 	package { 'fuse-sshfs' :
 		ensure 	 => 'installed',
 		source 	 => 'ftp://195.220.108.108/linux/dag/redhat/el7/en/x86_64/dag/RPMS/fuse-sshfs-2.5-1.el7.rf.x86_64.rpm',
 		provider => 'rpm',
-		require	 => Package['fuse'],
 	}
 
 	# Install dia2code
