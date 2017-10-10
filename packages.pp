@@ -6,10 +6,10 @@ class packages{
 	}
 
 	# This is needed for yum or things will be missing
-	#exec { 'getDeps' :
-	#	onlyif	=> '/usr/bin/yum-config-manager',
-	#	command => '/usr/bin/yum-config-manager --enable rhui-REGION-rhel-server-optional',
-	#}
+	exec { 'getDeps' :
+		onlyif	=> '/usr/bin/yum-config-manager',
+		command => '/usr/bin/yum-config-manager --enable rhui-REGION-rhel-server-optional',
+	}
 
 	#exec { 'getDia2Code' :
 	#	onlyif	=> '/usr/bin/test -x /usr/bin/wget',
@@ -20,6 +20,8 @@ class packages{
 	#	onlyif 	=> '/usr/bin/test -x /usr/bin/yum',
 	#	command => '/usr/bin/yum install dia2code-0.8.3-3.1.i586.rpm',
 	#}
+
+	package { 'libxml2' : ensure => installed, }
 
 	package { 'dia2Code' :
 		ensure 	=> 'installed',
