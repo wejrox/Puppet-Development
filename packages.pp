@@ -11,19 +11,17 @@ class packages{
 		command => '/usr/bin/yum-config-manager --enable rhui-REGION-rhel-server-optional',
 	}
 
-	#exec { 'getDia2Code' :
-	#	onlyif	=> '/usr/bin/test -x /usr/bin/wget',
-	#	command => '/usr/bin/wget https://downloads.sourceforge.net/project/dia2code/dia2code/0.8.3/dia2code-0.8.3-3.1.i586.rpm?r=http%3A%2F%2Fdia2code.sourceforge.net%2Fdownload.html&ts=1507292790&use_mirror=ncu',
-	#}
+	# Get cgdb
+	package { 'cgdb' :
+		ensure 	 => 'installed',
+		source 	 => 'ftp://mirror.switch.ch/pool/4/mirror/epel/7/x86_64/c/cgdb-0.6.8-1.el7.x86_64.rpm',
+		provider => 'rpm',
+	}
 
-	#exec { 'installDia2Code' :
-	#	onlyif 	=> '/usr/bin/test -x /usr/bin/yum',
-	#	command => '/usr/bin/yum install dia2code-0.8.3-3.1.i586.rpm',
-	#}
 
-	package { 'libxml2' : ensure => installed, }
-
-	package { 'dia2Code' :
+	# Install dia2code
+	package { 'libxml2.so.2' : ensure => installed, }
+	package { 'dia2code' :
 		ensure 	=> 'installed',
 		source 	=> 'https://downloads.sourceforge.net/project/dia2code/dia2code/0.8.3/dia2code-0.8.3-3.1.i586.rpm?r=http%3A%2F%2Fdia2code.sourceforge.net%2Fdownload.html&ts=1507292790&use_mirror=ncu',
 		provider => 'rpm',
@@ -32,8 +30,8 @@ class packages{
 	$services = [
 		'openssh', 'httpd', 'mysql', 
 		'tigervnc-server', 'tmux', 'lynx', 'gcc',
-		'gdb', 'cgdb', 'vim', 'emacs', 'fuse-sshfs', 
-		'puppet-lint', 'csh',
+		'gdb', 'vim', 'emacs', 'fuse-sshfs', 
+		'csh',
 	]
 
 	package { $services :
@@ -41,7 +39,7 @@ class packages{
 		provider 	=> 'yum',
 	}
 
-	service { $services :
+	service { 'httpd' :
 		enable => true,
 	}
 }
