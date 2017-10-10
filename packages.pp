@@ -20,11 +20,15 @@ class packages{
 
 	# Install fuse-sshfs	
 	package { 'glib' : 
-		ensure 		=> installed, 
+		ensure 		=> 'installed', 
 		source 		=> 'ftp://rpmfind.net/linux/dag/redhat/el6/en/x86_64/dag/RPMS/glib-1.2.10-33.el6.rf.x86_64.rpm',
 		provider 	=> 'rpm',
 	}
-	package { 'fuse' : ensure => installed, }
+	package { 'fuse' : 
+		ensure => 'installed', 
+		source => 'ftp://195.220.108.108/linux/dag/redhat/el4/en/x86_64/dag/RPMS/fuse-2.7.4-1.el4.rf.x86_64.rpm',
+		provider => 'rpm',
+		}
 	package { 'fuse-sshfs' :
 		ensure 	 => 'installed',
 		source 	 => 'ftp://195.220.108.108/linux/dag/redhat/el7/en/x86_64/dag/RPMS/fuse-sshfs-2.5-1.el7.rf.x86_64.rpm',
