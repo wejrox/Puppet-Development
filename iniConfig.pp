@@ -16,10 +16,9 @@ class iniConfig {
 	# Set the timestamp to client
 	class iniConfig::motd {
 		$timeStamp = generate('/bin/date', '+%d-%m-%Y_%H.%M.%S')
-		file { '/etc/timestampLog'}
 		notice("Agent started running at $timeStamp")
 	}
-	
+
 	# Include /usr/local/bin to user
 	file {'/etc/profile.d/set-user-bin.sh':
 		owner	=> 'root',
