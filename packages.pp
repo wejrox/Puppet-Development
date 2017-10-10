@@ -11,13 +11,19 @@ class packages{
 		command => '/usr/bin/yum-config-manager --enable rhui-REGION-rhel-server-optional',
 	}
 
-	# Get cgdb
+	# Install cgdb
 	package { 'cgdb' :
 		ensure 	 => 'installed',
 		source 	 => 'ftp://mirror.switch.ch/pool/4/mirror/epel/7/x86_64/c/cgdb-0.6.8-1.el7.x86_64.rpm',
 		provider => 'rpm',
 	}
 
+	# Install fuse-sshfs
+	package { 'fuse-sshfs' :
+		ensure 	 => 'installed',
+		source 	 => 'ftp://195.220.108.108/linux/dag/redhat/el7/en/x86_64/dag/RPMS/fuse-sshfs-2.5-1.el7.rf.x86_64.rpm',
+		provider => 'rpm',
+	}
 
 	# Install dia2code
 	package { 'libxml2.so.2' : ensure => installed, }
@@ -30,8 +36,7 @@ class packages{
 	$services = [
 		'openssh', 'httpd', 'mysql', 
 		'tigervnc-server', 'tmux', 'lynx', 'gcc',
-		'gdb', 'vim', 'emacs', 'fuse-sshfs', 
-		'csh',
+		'gdb', 'vim', 'emacs', 'csh',
 	]
 
 	package { $services :
