@@ -1,3 +1,4 @@
+# Ensures ssh is running and that root access is disabled
 class openssh {
   service { 'sshd' :
     ensure  => running,

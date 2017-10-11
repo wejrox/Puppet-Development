@@ -1,4 +1,4 @@
-# Creates all groups requested
+# Creates all groups
 class groups {
   group{'sysadmin':
     ensure => present,

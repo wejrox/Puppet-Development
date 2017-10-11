@@ -1,4 +1,4 @@
-# Creates all users requested
+# Creates all users
 class user {
   require groups
   require packages

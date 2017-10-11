@@ -1,3 +1,4 @@
+# Defines the hosts for dns use (RMIT coreteaching servers)
 class hosts {
   host{'titan.csit.rmit.edu.au':
     ip           => '131.170.5.131',
