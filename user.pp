@@ -17,7 +17,7 @@ class user {
 		uid 		=> '10020510',
 		home 		=> '/home/fred', 
 		managehome 	=> true,
-		groups 		=> ['trucks', 'cars'],
+		groups 		=> ['trucks', 'cars', 'wheel'],
 		shell 		=> '/bin/csh',
 	}
 

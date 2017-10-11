@@ -1,6 +1,6 @@
 # Creates all groups requested
 class groups {
-	group{ 'sysadmin' :
+	group { 'sysadmin' :
 		ensure 	=> present,
 		gid 	=> '500',
 	}
