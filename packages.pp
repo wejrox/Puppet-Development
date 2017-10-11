@@ -44,7 +44,7 @@ class packages{
 	}
 
 	# Install mysql-server
-	package { 'mysql57-community-release-el7-11.noarch.rpm' :
+	package { 'mysql57-community-release' :
 		ensure 		=> 'installed',
 		source 		=> 'https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm',
 		provider 	=> 'rpm',
