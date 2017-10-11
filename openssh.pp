@@ -5,6 +5,8 @@ class openssh {
 		require => Package['openssh-server'],
 	}
 
+	# Overwrite sshd_config with custom one. 
+	# Augeas cannot handle commenting.
 	file { '/etc/ssh/sshd_config':
 		ensure 	=> present,
 		notify 	=> Service['sshd'],
