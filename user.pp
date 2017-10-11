@@ -8,7 +8,7 @@ class user {
 		uid 		=> '10010510',
 		home 		=> '/home/becca', 
 		managehome 	=> true,
-		password	=> 'b4613f8681b1e26686a2e88299525a4dc89c46d5',
+		password	=> '$1$j.cuPw6w$xEqjdNmz.qgs2lgZgwTqQ.',
 		groups	 	=> ['sysadmin', 'cars'],
 		shell 		=> '/bin/bash',
 	}
@@ -18,7 +18,7 @@ class user {
 		uid 		=> '10020510',
 		home 		=> '/home/fred', 
 		managehome 	=> true,
-		password	=> 'b4613f8681b1e26686a2e88299525a4dc89c46d5',
+		password	=> '$1$j.cuPw6w$xEqjdNmz.qgs2lgZgwTqQ.',
 		groups 		=> ['trucks', 'cars', 'wheel'],
 		shell 		=> '/bin/csh',
 	}
@@ -28,7 +28,7 @@ class user {
 		uid 			=> '10030510',
 		home 			=> '/home/wilma',
 		managehome 		=> true, 
-		password		=> 'b4613f8681b1e26686a2e88299525a4dc89c46d5',
+		password		=> '$1$j.cuPw6w$xEqjdNmz.qgs2lgZgwTqQ.',
 		groups 			=> ['trucks', 'cars', 'ambulances'],
 		shell 			=> '/bin/bash',
 		purge_ssh_keys 	=> true,

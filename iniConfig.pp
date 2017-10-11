@@ -27,8 +27,9 @@ class iniConfig {
 	}
 
 	# Mount titan over becca (/home/becca/titan)
-	# Make dir to use, connect using sshfs; only if it doesn't exist
+	# Make dir to use, connect using sshfs; only if it's not mounted already
 	exec { 'mount_titan_becca' :
-		command => '/usr/bin/mkdir /home/becca/titan; /usr/bin/sshfs s3540510@titan.csit.rmit.edu.au:/home/s10/s3540510/ /home/becca/titan/',
+		command => '/usr/bin/mkdir /home/becca/titan; /usr/bin/sshfs s3540510@titan.csit.rmit.edu.au:/home/sl0/S3540510/ /home/becca/titan/',
+		unless 	=> 'find /home/becca/titan -mindepth 1 | read',
 	}
 }
