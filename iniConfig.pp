@@ -1,7 +1,7 @@
-class iniConfig {
+class iniconfig {
   augeas { 'agent_runinterval_exists' :
-    context => "/etc/puppetlabs/puppet/puppet.conf/agent",
-    changes => "set runinterval 20m",
+    context => '/etc/puppetlabs/puppet/puppet.conf/agent',
+    changes => 'set runinterval 20m',
   }
 
   exec { 'runlevel' : 
@@ -9,14 +9,12 @@ class iniConfig {
   }
 
   # Set the timestamp to client
-  class iniConfig::motd {
-    file { '/etc/profile.d/agent_login.sh' :
-      ensure  => present,
-      mode  => '0777',
-      owner   => 'root',
-      group => 'root',
-      content => 'timeStamp=`/bin/date +"%d-%m-%Y_%H.%M.%S"`; echo "Agent started running at $timeStamp"',
-    }
+  file { '/etc/profile.d/agent_login.sh' :
+    ensure  => present,
+    mode    => '0777',
+    owner   => 'root',
+    group   => 'root',
+    content => 'timeStamp=`/bin/date +"%d-%m-%Y_%H.%M.%S"`; echo "Agent started running at $timeStamp"',
   }
 
   # Include /usr/local/bin to user
@@ -34,7 +32,8 @@ class iniConfig {
   # Mount titan over becca (/home/becca/titan)
   # Make dir to use, connect using sshfs; only if it's not mounted already
   exec { 'mount_titan_becca' :
-    command => '/usr/bin/mkdir /home/becca/titan; echo "$(cat /etc/puppetlabs/code/environments/production/manifests/configfiles/ssh_pass)" | /usr/bin/sshfs -o StrictHostKeyChecking=no -o password_stdin s3540510@titan.csit.rmit.edu.au:/home/sl0/S3540510/ /home/becca/titan/',
+    command => '/usr/bin/mkdir /home/becca/titan; echo "$(cat /etc/puppetlabs/code/environments/production/manifests/configfiles/ssh_pass)" | \
+    /usr/bin/sshfs -o StrictHostKeyChecking=no -o password_stdin s3540510@titan.csit.rmit.edu.au:/home/sl0/S3540510/ /home/becca/titan/',
     unless  => '/usr/bin/find /home/becca/titan -mindepth 1 | /usr/bin/read',
   }
 }
