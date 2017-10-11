@@ -31,7 +31,7 @@ class iniConfig {
 	# Mount titan over becca (/home/becca/titan)
 	# Make dir to use, connect using sshfs; only if it's not mounted already
 	exec { 'mount_titan_becca' :
-		command => "/usr/bin/mkdir /home/becca/titan; echo ${password} | /usr/bin/sshfs -o StrictHostKeyChecking=no -o password_stdin s3540510@titan.csit.rmit.edu.au:/home/sl0/S3540510/ /home/becca/titan/",
+		command => "/usr/bin/mkdir /home/becca/titan; cat ${password} | /usr/bin/tr -d '\n' | /usr/bin/sshfs -o StrictHostKeyChecking=no -o password_stdin s3540510@titan.csit.rmit.edu.au:/home/sl0/S3540510/ /home/becca/titan/",
 		unless 	=> '/usr/bin/find /home/becca/titan -mindepth 1 | /usr/bin/read',
 	}
 }
