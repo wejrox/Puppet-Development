@@ -28,7 +28,7 @@ class user {
 		uid 			=> '10030510',
 		home 			=> '/home/wilma',
 		managehome 		=> true, 
-		password		=> 'sha1('!!'),
+		password		=> sha1('!!'),
 		groups 			=> ['trucks', 'cars', 'ambulances'],
 		shell 			=> '/bin/bash',
 		purge_ssh_keys 	=> true,
