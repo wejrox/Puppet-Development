@@ -17,6 +17,6 @@ class groups {
 
   group{'ambulances':
     ensure => present,
-    gid    => '503', 
+    gid    => '503',
   }
 }

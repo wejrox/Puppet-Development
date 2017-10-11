@@ -19,14 +19,14 @@ class packages{
   }
 
   # Install fuse-sshfs  
-  package { 'glib*' : 
-    ensure   => 'installed', 
+  package { 'glib*' :
+    ensure   => 'installed',
     provider => 'yum',
-  } 
-  -> package { 'fuse*' : 
-    ensure   => 'installed', 
+  }
+  -> package { 'fuse*' :
+    ensure   => 'installed',
     provider => 'yum',
-  } 
+  }
   -> package { 'fuse-sshfs' :
     ensure   => 'installed',
     source   => 'ftp://195.220.108.108/linux/dag/redhat/el7/en/x86_64/dag/RPMS/fuse-sshfs-2.5-1.el7.rf.x86_64.rpm',
@@ -34,31 +34,31 @@ class packages{
   }
 
   # Install dia2code
-  package { 'libxml2.so.2' : 
-    ensure => installed, 
-  } 
+  package { 'libxml2.so.2' :
+    ensure => installed,
+  }
   -> package { 'dia2code' :
-    ensure    => 'installed',
-    source    => 'https://downloads.sourceforge.net/project/dia2code/dia2code/0.8.3/dia2code-0.8.3-3.1.i586.rpm?r=http%3A%2F%2Fdia2code.sourceforge.net%2Fdownload.html&ts=1507292790&use_mirror=ncu',
-    provider  => 'rpm',
+    ensure   => 'installed',
+    source   => 'https://downloads.sourceforge.net/project/dia2code/dia2code/0.8.3/dia2code-0.8.3-3.1.i586.rpm?r=http%3A%2F%2Fdia2code.sourceforge.net%2Fdownload.html&ts=1507292790&use_mirror=ncu',
+    provider => 'rpm',
   }
 
   # Install mysql-server
   package { 'mysql57-community-release' :
-    ensure    => 'installed',
-    source    => 'https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm',
-    provider  => 'rpm',
+    ensure   => 'installed',
+    source   => 'https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm',
+    provider => 'rpm',
   }
 
   # Install additional packages that exist on Yum
   $packages = [
-    'openssh-server', 'httpd', 'mysql', 
+    'openssh-server', 'httpd', 'mysql',
     'tigervnc-server', 'tmux', 'lynx', 'gcc',
     'gdb', 'vim', 'emacs', 'csh',
   ]
 
   package { $packages :
-    ensure    => 'installed',
-    provider  => 'yum',
+    ensure   => 'installed',
+    provider => 'yum',
   }
 }

@@ -8,9 +8,9 @@ class services {
   file { '/etc/httpd/conf/httpd.conf' :
     ensure  => present,
     notify  => Service['httpd'],
-    mode  => '0777',
+    mode    => '0777',
     owner   => 'root',
-    group => 'root',
+    group   => 'root',
     source  => '/etc/puppetlabs/code/environments/production/manifests/configfiles/httpd.conf',
     require => Package['httpd'],
   }
