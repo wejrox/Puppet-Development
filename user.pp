@@ -18,7 +18,7 @@ class user {
 		home 		=> '/home/fred', 
 		managehome 	=> true,
 		groups 		=> ['trucks', 'cars'],
-		shell 		=> '/bin/bsd-csh',
+		shell 		=> '/bin/csh',
 	}
 
 	user { 'wilma' :
