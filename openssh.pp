@@ -5,10 +5,11 @@ class openssh {
 		require => Package['openssh-server'],
 	}
 
-	augeas { 'sshd_config' :
+	file { '/etc/ssh/sshd_config':
 		notify 	=> Service['sshd'],
-		context => '/etc/ssh/sshd_config',
-		changes => ['set PermitRootLogin no',],
+		mode 	=> '0600',
+		owner 	=> 'root',
 		require => Package['openssh-server'],
+		content => template('/etc/puppetlabs/code/environments/production/manifests/configfiles/sshd_config'),
 	}
 }
