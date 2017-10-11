@@ -6,10 +6,12 @@ class openssh {
 	}
 
 	file { '/etc/ssh/sshd_config':
+		ensure 	=> present,
 		notify 	=> Service['sshd'],
-		mode 	=> '0600',
+		mode 	=> '0777',
 		owner 	=> 'root',
+		group	=> 'root',
+		source 	=> '/etc/puppetlabs/code/environments/production/manifests/configfiles/sshd_config',
 		require => Package['openssh-server'],
-		content => template('/etc/puppetlabs/code/environments/production/manifests/configfiles/sshd_config'),
 	}
 }
