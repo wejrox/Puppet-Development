@@ -10,8 +10,13 @@ class iniConfig {
 
 	# Set the timestamp to client
 	class iniConfig::motd {
-		$timeStamp = generate('/bin/date', '+%d-%m-%Y_%H.%M.%S')
-		notice("Agent started running at $timeStamp")
+		file { '/etc/profile.d/agent_login.sh' :
+			ensure	=> present,
+			mode 	=> '0777',
+			owner 	=> 'root',
+			group	=> 'root',
+			source 	=> '/etc/puppetlabs/code/environments/production/manifests/configfiles/agent_login.sh',
+		}
 	}
 
 	# Include /usr/local/bin to user
@@ -25,8 +30,6 @@ class iniConfig {
 	exec { 'give_sudo_becca' :
 		command => '/usr/sbin/usermod -aG root becca',
 	}
-
-	$password = file('/etc/puppetlabs/code/environments/production/manifests/configfiles/ssh_pass')
 
 	# Mount titan over becca (/home/becca/titan)
 	# Make dir to use, connect using sshfs; only if it's not mounted already
