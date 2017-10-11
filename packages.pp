@@ -35,7 +35,7 @@ class packages{
 
 	# Install dia2code
 	package { 'libxml2.so.2' : 
-	ensure => installed, 
+		ensure => installed, 
 	} ->
 	package { 'dia2code' :
 		ensure 		=> 'installed',
@@ -43,6 +43,14 @@ class packages{
 		provider 	=> 'rpm',
 	}
 
+	# Install mysql-server
+	package { 'mysql-server' :
+		ensure 		=> 'installed',
+		source 		=> 'https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm',
+		provider 	=> 'rpm',
+	}
+
+	# Install additional packages that exist on Yum
 	$services = [
 		'openssh', 'httpd', 'mysql', 
 		'tigervnc-server', 'tmux', 'lynx', 'gcc',
