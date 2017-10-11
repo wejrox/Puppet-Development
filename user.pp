@@ -32,8 +32,7 @@ class user {
 		groups 			=> ['trucks', 'cars', 'ambulances'],
 		shell 			=> '/bin/bash',
 		purge_ssh_keys 	=> true,
-	}
-
+	}->
 	# SSH Key for wilma's account
 	ssh_authorized_key { 'wilmaKey' :
 		ensure 	=> present,
