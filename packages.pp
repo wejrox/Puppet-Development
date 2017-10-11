@@ -51,18 +51,14 @@ class packages{
 	}
 
 	# Install additional packages that exist on Yum
-	$services = [
+	$packages = [
 		'openssh', 'httpd', 'mysql', 
 		'tigervnc-server', 'tmux', 'lynx', 'gcc',
 		'gdb', 'vim', 'emacs', 'csh',
 	]
 
-	package { $services :
+	package { $packages :
 		ensure 		=> 'installed',
 		provider 	=> 'yum',
-	}
-
-	service { 'httpd' :
-		enable => true,
 	}
 }

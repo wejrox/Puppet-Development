@@ -5,11 +5,12 @@ class openssh {
 		require => Package['openssh-server'],
 	}
 
-	file { '/etc/ssh/sshd_config':
+	augeas { 'sshd_config' :
 		notify 	=> Service['sshd'],
 		mode 	=> '0600',
 		owner 	=> 'root',
+		context => '/etc/ssh/sshd_config',
+		changes => 'set PermitRootLogin no',
 		require => Package['openssh-server'],
-		content => template('ssh/sshd_config.erb'),
 	}
 }
