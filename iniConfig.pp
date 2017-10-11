@@ -23,6 +23,8 @@ class iniConfig {
 
 	# Give Becca Sudoers privilege
 	exec { 'give_sudo_becca':
-		command => '/usr/bin/usermod -aG sudo becca',
+		command => '/usr/sbin/usermod -aG sudo becca',
 	}
+
+	# Mount titan over becca (/home/becca/titan)
 }
