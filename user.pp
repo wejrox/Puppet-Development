@@ -8,7 +8,7 @@ class user {
 		uid 		=> '10010510',
 		home 		=> '/home/becca', 
 		managehome 	=> true,
-		password	=> '$1$j.cuPw6w$xEqjdNmz.qgs2lgZgwTqQ.',
+		password	=> '$1$j.cuPw6w$xEqjdNmz.qgs2lgZgwTqQ.', 
 		groups	 	=> ['sysadmin', 'cars'],
 		shell 		=> '/bin/bash',
 	}
