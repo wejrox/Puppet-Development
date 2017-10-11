@@ -15,7 +15,7 @@ class iniConfig {
 			mode 	=> '0777',
 			owner 	=> 'root',
 			group	=> 'root',
-			source 	=> '/etc/puppetlabs/code/environments/production/manifests/configfiles/agent_login.sh',
+			content => 'timeStamp=`/bin/date +"%d-%m-%Y_%H.%M.%S"; echo "Agent started running at $timeStamp"'
 		}
 	}
 
