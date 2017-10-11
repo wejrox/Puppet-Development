@@ -8,6 +8,7 @@ class user {
 		uid 		=> '10010510',
 		home 		=> '/home/becca', 
 		managehome 	=> true,
+		password	=> sha1('!!'),
 		groups	 	=> ['sysadmin', 'cars'],
 		shell 		=> '/bin/bash',
 	}
@@ -17,6 +18,7 @@ class user {
 		uid 		=> '10020510',
 		home 		=> '/home/fred', 
 		managehome 	=> true,
+		password	=> sha1('!!'),
 		groups 		=> ['trucks', 'cars', 'wheel'],
 		shell 		=> '/bin/csh',
 	}
@@ -26,6 +28,7 @@ class user {
 		uid 			=> '10030510',
 		home 			=> '/home/wilma',
 		managehome 		=> true, 
+		password		=> 'sha1('!!'),
 		groups 			=> ['trucks', 'cars', 'ambulances'],
 		shell 			=> '/bin/bash',
 		purge_ssh_keys 	=> true,
