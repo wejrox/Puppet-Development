@@ -6,7 +6,6 @@ class services {
 
 	augeas { 'httpd_conf' :
 		context => '/etc/httpd/conf/httpd.conf'
-		change => 'set DocumentRoot "/var/www/s3540510"',
-		after
+		changes => 'set DocumentRoot "/var/www/s3540510"',
 	}
 }

@@ -10,7 +10,7 @@ class openssh {
 		mode 	=> '0600',
 		owner 	=> 'root',
 		context => '/etc/ssh/sshd_config',
-		change => 'set PermitRootLogin no',
+		changes => ['set PermitRootLogin no',],
 		require => Package['openssh-server'],
 	}
 }
