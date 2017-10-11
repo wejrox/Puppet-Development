@@ -52,7 +52,7 @@ class packages{
 
 	# Install additional packages that exist on Yum
 	$packages = [
-		'openssh', 'httpd', 'mysql', 
+		'openssh-server', 'httpd', 'mysql', 
 		'tigervnc-server', 'tmux', 'lynx', 'gcc',
 		'gdb', 'vim', 'emacs', 'csh',
 	]
