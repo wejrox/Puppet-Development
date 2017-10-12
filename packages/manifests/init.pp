@@ -62,7 +62,13 @@ class packages{
     provider => 'yum',
   }
 
-  service { $packages :
+  service { 'openssh-server' :
+    enable => true,
+  }
+  service { 'mysql' :
+    enable => true,
+  }
+  service { 'vim' :
     enable => true,
   }
 }
