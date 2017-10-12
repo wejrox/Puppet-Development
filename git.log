@@ -1,107 +1,106 @@
-* [31m9da3330[m -[33m (HEAD, master)[m Final commmit S3540510 [32m(49 seconds ago) [1;34m<James McDowell>[m
-* [31m70d75c9[m -[33m[m Start services on boot not possible [32m(7 minutes ago) [1;34m<Unknown>[m
-* [31me661a60[m -[33m[m Final Test [32m(9 minutes ago) [1;34m<Unknown>[m
-* [31mb8deb61[m -[33m[m Updated PDF Report, attempt to enable all services on start [32m(11 minutes ago) [1;34m<Unknown>[m
-* [31mdb00614[m -[33m[m Port 8080 was in use by httpd-proxy [32m(47 minutes ago) [1;34m<Unknown>[m
-* [31m908bde0[m -[33m[m Stopped specifying port [32m(51 minutes ago) [1;34m<Unknown>[m
-* [31mbf8a96f[m -[33m[m Additional attempt to fix port issues [32m(54 minutes ago) [1;34m<Unknown>[m
-* [31m32b54af[m -[33m[m Updated port to 8080 [32m(66 minutes ago) [1;34m<Unknown>[m
-* [31mbdfe854[m -[33m[m Updated file subscription [32m(71 minutes ago) [1;34m<Unknown>[m
-* [31mf6717c2[m -[33m[m Upated pdf [32m(11 hours ago) [1;34m<Unknown>[m
-* [31m0138533[m -[33m (origin/master)[m Added log from puppet agent run [32m(12 hours ago) [1;34m<Puppet Master>[m
-* [31m4a52812[m -[33m[m Updated report, httpd dir [32m(12 hours ago) [1;34m<Unknown>[m
-* [31m8dec83b[m -[33m[m Added report of decisions made [32m(21 hours ago) [1;34m<Unknown>[m
-* [31m4a57eb3[m -[33m[m Httpd ensure running added [32m(23 hours ago) [1;34m<Unknown>[m
-* [31mf84f6bb[m -[33m[m Renamed agent_runinterval, subscribed httpd to file [32m(23 hours ago) [1;34m<Unknown>[m
-* [31m37ca708[m -[33m[m Updated to give becca sudo privileges [32m(34 hours ago) [1;34m<Unknown>[m
-* [31m2dd3954[m -[33m[m Conform to style guide [32m(34 hours ago) [1;34m<Unknown>[m
-* [31m34a0255[m -[33m[m Further updating for puppet-lint [32m(34 hours ago) [1;34m<Unknown>[m
-* [31mebecb65[m -[33m[m Further updating for puppet-lint [32m(34 hours ago) [1;34m<Unknown>[m
-* [31m8b62484[m -[33m[m Further updating for puppet-lint [32m(34 hours ago) [1;34m<Unknown>[m
-* [31m13631ed[m -[33m[m Updating to fit puppet-lint [32m(34 hours ago) [1;34m<Unknown>[m
-* [31mad66d20[m -[33m[m Removed agent_login.sh [32m(35 hours ago) [1;34m<Unknown>[m
-* [31ma15ee3d[m -[33m[m Fixed syntax errors [32m(35 hours ago) [1;34m<Unknown>[m
-* [31m3052ba6[m -[33m[m Attempting to create shell script from scratch [32m(35 hours ago) [1;34m<Unknown>[m
-* [31me796fb3[m -[33m[m Added MOTD shell script [32m(35 hours ago) [1;34m<Unknown>[m
-* [31mdeae8db[m -[33m[m Another attempt at mounting password [32m(35 hours ago) [1;34m<Unknown>[m
-* [31ma7bfa0d[m -[33m[m Encapsulated mounting password [32m(2 days ago) [1;34m<Unknown>[m
-* [31m86f5283[m -[33m[m Password for mounting updated [32m(2 days ago) [1;34m<Unknown>[m
-* [31mf188788[m -[33m[m Password for mounting updated [32m(2 days ago) [1;34m<Unknown>[m
-* [31ma178a6a[m -[33m[m Password for mounting updated [32m(2 days ago) [1;34m<Unknown>[m
-* [31m4a5ddd4[m -[33m[m Wilma key updated, password given for mounting [32m(2 days ago) [1;34m<Unknown>[m
-* [31m592c512[m -[33m[m Fixed syntax error for sshfs [32m(2 days ago) [1;34m<Unknown>[m
-* [31m06deaa7[m -[33m[m Qualified command [32m(2 days ago) [1;34m<Unknown>[m
-* [31mb1c61f3[m -[33m[m SSHFS 4 [32m(2 days ago) [1;34m<Unknown>[m
-* [31m070645b[m -[33m[m SSHFS 3 [32m(2 days ago) [1;34m<Unknown>[m
-* [31mdd4cd23[m -[33m[m Attempt at fixing SSHFS 2 [32m(2 days ago) [1;34m<Unknown>[m
-* [31m6d14471[m -[33m[m Fixed passwords, attempt at fixing SSHFS [32m(2 days ago) [1;34m<Unknown>[m
-* [31m94be45e[m -[33m[m Attemping to sha1 password [32m(2 days ago) [1;34m<Unknown>[m
-* [31m6bfdb06[m -[33m[m Removed encryption, errors [32m(2 days ago) [1;34m<Unknown>[m
-* [31m55a1d2e[m -[33m[m Titan fix [32m(2 days ago) [1;34m<Unknown>[m
-* [31m8b8fb9b[m -[33m[m Syntax error [32m(2 days ago) [1;34m<Unknown>[m
-* [31m328da62[m -[33m[m User passwords now encrypted [32m(2 days ago) [1;34m<Unknown>[m
-* [31mb061a15[m -[33m[m Titan directory mounts over becca [32m(2 days ago) [1;34m<Unknown>[m
-* [31mcfcc141[m -[33m[m Sudo group did not exit [32m(2 days ago) [1;34m<Unknown>[m
-* [31mbd0550d[m -[33m[m Typo in file location [32m(2 days ago) [1;34m<Unknown>[m
-* [31mfebca6d[m -[33m[m Gave Becca sudo privileges [32m(2 days ago) [1;34m<Unknown>[m
-* [31mf87906b[m -[33m[m Gave user Fred wheel privileges [32m(2 days ago) [1;34m<Unknown>[m
-* [31m494d94c[m -[33m[m Customised httpd.conf, updated services.pp [32m(2 days ago) [1;34m<Unknown>[m
-* [31maffdc41[m -[33m[m Added copy of httpd.conf [32m(2 days ago) [1;34m<Puppet Master>[m
-* [31ma712329[m -[33m[m Reverted back to copying sshd_conf over [32m(2 days ago) [1;34m<Unknown>[m
-* [31m94c1a93[m -[33m[m OpenSSH now replaces sshd_conf file directly [32m(2 days ago) [1;34m<Unknown>[m
-* [31mf052c9d[m -[33m[m Updated to openssh-server [32m(2 days ago) [1;34m<Unknown>[m
-* [31maa9fd81[m -[33m[m MySQL Server error fix [32m(2 days ago) [1;34m<Unknown>[m
-* [31m732dd1b[m -[33m[m MySQL Server already installed error [32m(2 days ago) [1;34m<Unknown>[m
-* [31mf7b8ba5[m -[33m[m Openssh is not called openssh-server, fixed [32m(2 days ago) [1;34m<Unknown>[m
-* [31m03701b7[m -[33m[m Removed mode as AugeAs doesn't support [32m(2 days ago) [1;34m<Unknown>[m
-* [31mea2c953[m -[33m[m Fixed augeas syntax error 3 [32m(2 days ago) [1;34m<Unknown>[m
-* [31me77d112[m -[33m[m Fixed augeas syntax error 3 [32m(2 days ago) [1;34m<Unknown>[m
-* [31mffabd5c[m -[33m[m Fixed Augeas syntax error 2 [32m(2 days ago) [1;34m<Unknown>[m
-* [31me4a9e91[m -[33m[m Fixed Augeas syntax error [32m(2 days ago) [1;34m<Unknown>[m
-*   [31ma4b39ca[m -[33m[m Merge remote-tracking branch 'origin/master' [32m(2 days ago) [1;34m<Unknown>[m
-|\  
-| * [31me7d710f[m -[33m[m Added a config file for sshd to be used as a template to disable root access. [32m(2 days ago) [1;34m<Puppet Master>[m
-* | [31m9c07f88[m -[33m[m Edited openssh, packages, added services manifest [32m(2 days ago) [1;34m<Unknown>[m
-* | [31ma54130b[m -[33m[m Added a config file for sshd [32m(2 days ago) [1;34m<Puppet Master>[m
-|/  
-* [31m5b431dd[m -[33m[m Added MySql server [32m(2 days ago) [1;34m<Unknown>[m
-* [31m6b11415[m -[33m[m Added build from source, updated SSHFS [32m(2 days ago) [1;34m<Unknown>[m
-* [31mc9fad83[m -[33m[m Test attempt [32m(3 days ago) [1;34m<Unknown>[m
-* [31m2d87411[m -[33m[m Fixed some syntax [32m(3 days ago) [1;34m<Unknown>[m
-* [31m5a7b5b0[m -[33m[m Added glib dependency [32m(3 days ago) [1;34m<Unknown>[m
-* [31m3ed2c9b[m -[33m[m Added another fuse dependency [32m(3 days ago) [1;34m<Unknown>[m
-* [31mab37e1b[m -[33m[m Fixed fuse dependency [32m(3 days ago) [1;34m<Unknown>[m
-* [31m400366d[m -[33m[m Added fuse dependency [32m(3 days ago) [1;34m<Unknown>[m
-* [31m2b628bc[m -[33m[m Added fuse-sshfs support [32m(3 days ago) [1;34m<Unknown>[m
-* [31m39b17fd[m -[33m[m Added custom cgdb, deps [32m(3 days ago) [1;34m<Unknown>[m
-* [31m3bcf452[m -[33m[m Updated packages 2 [32m(3 days ago) [1;34m<Unknown>[m
-* [31mf0367a7[m -[33m[m Updated packages [32m(3 days ago) [1;34m<Unknown>[m
-* [31maaa57d4[m -[33m[m Properly supported runlevel 3 [32m(3 days ago) [1;34m<Unknown>[m
-* [31mffeca5f[m -[33m[m Augeas update 4 [32m(3 days ago) [1;34m<Unknown>[m
-* [31md16944d[m -[33m[m Fixed file path error [32m(3 days ago) [1;34m<Unknown>[m
-* [31mafd10c5[m -[33m[m Fixed syntax error [32m(3 days ago) [1;34m<Unknown>[m
-* [31mcdbacbb[m -[33m[m Added Host Support and Openssh, additional testing [32m(3 days ago) [1;34m<Unknown>[m
-* [31mc878eff[m -[33m[m Added MOTD, /usr/local/bin, deps [32m(3 days ago) [1;34m<Unknown>[m
-* [31mbe87f48[m -[33m[m Updated exec again [32m(6 days ago) [1;34m<Unknown>[m
-* [31mb1767f3[m -[33m[m Updated exec [32m(6 days ago) [1;34m<Unknown>[m
-* [31m47612bb[m -[33m[m Changed package names [32m(6 days ago) [1;34m<Unknown>[m
-* [31md8e4e98[m -[33m[m Bug fixes [32m(7 days ago) [1;34m<Unknown>[m
-* [31me1fac6b[m -[33m[m Augeas update 3 [32m(7 days ago) [1;34m<Unknown>[m
-* [31m7d27d5a[m -[33m[m Augeas update 2 [32m(7 days ago) [1;34m<Unknown>[m
-* [31md8d50ce[m -[33m[m Augeas update [32m(7 days ago) [1;34m<Unknown>[m
-* [31m242738b[m -[33m[m Simplification [32m(7 days ago) [1;34m<Unknown>[m
-* [31mb4d5ffa[m -[33m[m Changed iniConfig to augeas [32m(7 days ago) [1;34m<Unknown>[m
-* [31m6874b72[m -[33m[m Changed user file [32m(7 days ago) [1;34m<Unknown>[m
-* [31me00f409[m -[33m[m Changed iniFile [32m(7 days ago) [1;34m<Unknown>[m
-* [31ma50a49b[m -[33m[m Testing [32m(7 days ago) [1;34m<Unknown>[m
-* [31mcd03bf7[m -[33m[m Fixed CSH dependency, Agent check-in [32m(7 days ago) [1;34m<Unknown>[m
-* [31m6ff2b05[m -[33m[m Added Agent Check-In [32m(9 days ago) [1;34m<Unknown>[m
-* [31me9e2000[m -[33m[m Added puppet-lint package, README [32m(11 days ago) [1;34m<Unknown>[m
-* [31m38ca6be[m -[33m[m Added encryption for Wilma [32m(11 days ago) [1;34m<Unknown>[m
-* [31m0c3437b[m -[33m[m Fixed syntax in packages.pp [32m(11 days ago) [1;34m<Unknown>[m
-* [31mcd8bcbc[m -[33m[m Fixed syntax error [32m(11 days ago) [1;34m<Unknown>[m
-* [31m3bf6504[m -[33m[m Added basic scripts for users and packages [32m(11 days ago) [1;34m<Unknown>[m
-*   [31m42132df[m -[33m[m Merge branch 'master' of https://github.com/wejrox/puppet-development Set up [32m(12 days ago) [1;34m<Puppet Master>[m
-|\  
-| * [31mc546b2d[m -[33m[m Initial commit [32m(3 weeks ago) [1;34m<Unknown>[m
-* [31m38fc099[m -[33m[m First commit Manifests for Puppet Enterprise This file will contain the manifest required. Manifest will be created on an external machine and pulled to the server then tested. [32m(12 days ago) [1;34m<root>[m
+45ac6e6c609ec7992563c3c2e74241d7db1aee4b Created formatted git log
+8934d9bfcee089d0219a5ffa9f1d3414f2efdcdd Created logs
+9da33305173dba5cd1eb1f6bc2ebe3b11e2f5fd4 Final commmit S3540510
+70d75c9f2c7fa4fe887dc1d3a62031a8408facbe Start services on boot not possible
+e661a605a0b32383ef2018c6639535ae24a270cb Final Test
+b8deb617314df4ea593fec64e60acb665cb3c6e1 Updated PDF Report, attempt to enable all services on start
+db00614383ab5a0270d2fef5d196cd1da18d05a4 Port 8080 was in use by httpd-proxy
+908bde0dcc1404e10ad0f686f58610e0db55044c Stopped specifying port
+bf8a96f7a817905d36d2b5bde537a19f02c225a1 Additional attempt to fix port issues
+32b54af409968e7e0a694670fe33eb06b01014c4 Updated port to 8080
+bdfe85479c9cc9ecedb3452d9ec9cf2c4226f01f Updated file subscription
+f6717c2967c2a794752cb21fee10dbab74d0b905 Upated pdf
+0138533ce9d5a36bdd3234f6c9f20820ffc7ecb6 Added log from puppet agent run
+4a5281270fc6927c94c2cde142b2aaf487aa84f8 Updated report, httpd dir
+8dec83b1cbd4ce03e23accf28a169b48513391cc Added report of decisions made
+4a57eb3d226b58f36d2bd058174cb62731084107 Httpd ensure running added
+f84f6bb50ea7c8f6dc78e662050168e6f5100752 Renamed agent_runinterval, subscribed httpd to file
+37ca708ab66450f01cf2b66573e7505fa6094fea Updated to give becca sudo privileges
+2dd395478e830dbdb4e3182852919a39de009add Conform to style guide
+34a025572ed03f5c7a89f67031dafe6f00b28d02 Further updating for puppet-lint
+ebecb652c4c9ce24700f888111db059caf3b15c1 Further updating for puppet-lint
+8b624845bdb46490f5cfb81933fb1d6436d155d6 Further updating for puppet-lint
+13631ed42869bbfb97ef89f909009d12808f47ba Updating to fit puppet-lint
+ad66d2000ce89895a7bd2e05df1c5c3104821b5d Removed agent_login.sh
+a15ee3dc2380e1dd55048492de55d3d31b4f4c38 Fixed syntax errors
+3052ba621fd2b32af9c5a330673f16bbb95f4d95 Attempting to create shell script from scratch
+e796fb3a9ff6fd98ca8c8b8d33598a37b5e01b5b Added MOTD shell script
+deae8db406540db0e22ed0b319f94c8c9b2261e2 Another attempt at mounting password
+a7bfa0d97d46566fcc49cc76ad1532a863f77e72 Encapsulated mounting password
+86f52830947d36bdbab923e1f47ce10bfe966465 Password for mounting updated
+f1887888d1e47eb025d78d95b931648ce5b164f2 Password for mounting updated
+a178a6ab0d5f1b086ff441cd08f1dd6027b16baa Password for mounting updated
+4a5ddd48771e0b169a20000255e596f0daee02c4 Wilma key updated, password given for mounting
+592c5121311f2d6c949998fedf610d29767342e9 Fixed syntax error for sshfs
+06deaa713d07cb2132314d82f9f18878977b66e4 Qualified command
+b1c61f39d7972927eeb2cce23151b3da03706c07 SSHFS 4
+070645b4aaef675f9e81d87da42a093b3df8a006 SSHFS 3
+dd4cd23c52785ca5a6e2a08d4732b45d6378db19 Attempt at fixing SSHFS 2
+6d144719bcb6cad976faad73cec2e40857e9e25f Fixed passwords, attempt at fixing SSHFS
+94be45e874f2d9ddffc93d50b28294330ddf94ff Attemping to sha1 password
+6bfdb06f7d7ce50c59fa50d3a138b1b2e92c904f Removed encryption, errors
+55a1d2e6e4dead85abb3eaa57d19cd149cdd5404 Titan fix
+8b8fb9bb256da1eb04348d7f29689f5b9c9fafd6 Syntax error
+328da6227c1c467dee013ea6c0267661a8d55eda User passwords now encrypted
+b061a15223a54182ae2c9c026079e13d40fd4713 Titan directory mounts over becca
+cfcc1419f8ac063487dd4f7895904021231049f8 Sudo group did not exit
+bd0550d80d0b0cdb1b71794729ea4ce5a2631d75 Typo in file location
+febca6decfe20296096685dcd03dd1d6f6df131c Gave Becca sudo privileges
+f87906b988d58b93f2d778f24d12f769e1afcd1b Gave user Fred wheel privileges
+494d94cda7014f6aef66d8568bbfde0805a1a570 Customised httpd.conf, updated services.pp
+affdc41f22c6c1e8fd7baaf65da0a043f661f777 Added copy of httpd.conf
+a712329dd51e8728be5c8a496448eb4fdd7c15e7 Reverted back to copying sshd_conf over
+94c1a9341cf687f88cbf963eafd3663f2dfac868 OpenSSH now replaces sshd_conf file directly
+f052c9d451c12d54276fb4667d34eef09262049b Updated to openssh-server
+aa9fd81cf64cca59d2c80ac1457b98df3cd3ef85 MySQL Server error fix
+732dd1bce1df1b831c2ce651001b25abfc3c1eb9 MySQL Server already installed error
+f7b8ba57e2fbd48ed92cd1c5f65ff289432e09c8 Openssh is not called openssh-server, fixed
+03701b7dc0230f5dd32e4f23232c7875a3a4688f Removed mode as AugeAs doesn't support
+ea2c95313d71d2abdd1e5a8f8a026587b1775891 Fixed augeas syntax error 3
+e77d1123623363a7ea499e1fba108c282accdd78 Fixed augeas syntax error 3
+ffabd5c17f48bcaacc0ac03cf55c2f6e258fa096 Fixed Augeas syntax error 2
+e4a9e9149711cfcf211814b030df1f3c8b1e3981 Fixed Augeas syntax error
+a4b39caa51aece6836e70b5aa2812523ec6b4789 Merge remote-tracking branch 'origin/master'
+9c07f8800e1fa88e13c9613f7a95d4520a78e6d9 Edited openssh, packages, added services manifest
+a54130b37f64b4c70e435fe6c4ef7711fbcb1f23 Added a config file for sshd
+e7d710f797b56b94a8b39d8a7eeb2dc3d1d1dc89 Added a config file for sshd to be used as a template to disable root access.
+5b431dd3d578e262986eba9653cc61d6c46107e2 Added MySql server
+6b114153aa9b389f72d6a6efe34733eca814fb29 Added build from source, updated SSHFS
+c9fad8303432c9774fb7614640c14ea480e8b6d7 Test attempt
+2d874113f6ee9b9da2683aec1bfb88fe72733e2b Fixed some syntax
+5a7b5b0ddca2c9d3f224fafbc6fd7f3a67811c5f Added glib dependency
+3ed2c9b74c5f8394cc367c12a14d5db094f955f1 Added another fuse dependency
+ab37e1b8669a05884b069a36a0dd7831a095591d Fixed fuse dependency
+400366d6a9821f5de3a66bc2694691f4b23c07c5 Added fuse dependency
+2b628bc96144fe19b2b6ad04a114dc8cd09f1306 Added fuse-sshfs support
+39b17fd06f50d88edb8f49d83e2c82d8abc2b1c3 Added custom cgdb, deps
+3bcf452bf842864318f2d1230d5a2a4636e510d6 Updated packages 2
+f0367a76903dbc505cad488fafe503d29c14665a Updated packages
+aaa57d4b12d4a7e49a40fe4cf3a2fd6f4cf2e302 Properly supported runlevel 3
+ffeca5f005acdbc27229887f5933bb81049768b7 Augeas update 4
+d16944d23139d4f98f2655733a47853906ebd5bd Fixed file path error
+afd10c5bb19a775715988324ce5a61fb7fdd02d3 Fixed syntax error
+cdbacbb0f676b3982470025f5c317ef33ea8b5fa Added Host Support and Openssh, additional testing
+c878eff132a4040116050e3431f29dd16b7255a3 Added MOTD, /usr/local/bin, deps
+be87f483543aa5ba6e29aa93d97e3029c87e8d2b Updated exec again
+b1767f32a33836d2f03de9293a095172b24a48a3 Updated exec
+47612bbb5d21ba37e777933a49971ae26d0a2520 Changed package names
+d8e4e98068bc100373a37d63213228ecdc1246ee Bug fixes
+e1fac6bc96daa8677d89e4409dfa5df6ca91034b Augeas update 3
+7d27d5ad15111928ba28e3f3a04d1711fbe27f1c Augeas update 2
+d8d50ce47a278b1cff51ce78e3eaa4d28132e7e5 Augeas update
+242738bd1faf87e726e3ef6a97506b3ff370c6cc Simplification
+b4d5ffadd3d561f3ada214c56a065bc573a447ac Changed iniConfig to augeas
+6874b72f9c8e2a807db43910904ac3e507ea8dae Changed user file
+e00f409d4941b7a92352b536adfbd4d9640f276e Changed iniFile
+a50a49b2d4e14c73ccd009d18e2eceeed68cf470 Testing
+cd03bf75b37aa8aad364cce182fa7d231df8c93e Fixed CSH dependency, Agent check-in
+6ff2b05006b9f2cf0204824c87384e6aee829fbb Added Agent Check-In
+e9e2000027a50f056df15d0950dd7d507b074bad Added puppet-lint package, README
+38ca6be2af5509cceb5239352385ef8ff7af32cf Added encryption for Wilma
+0c3437b0476ba6e81190df94e7e97f8188041cd5 Fixed syntax in packages.pp
+cd8bcbcf3ad423e856602f29152146699dce6adc Fixed syntax error
+3bf6504d5a020a5a0164c6c1892da4802c3a467d Added basic scripts for users and packages
+42132df2fb2538c5759576b2d06fcbe058810771 Merge branch 'master' of https://github.com/wejrox/puppet-development Set up
+38fc099dae3ee09994dbe56c9e0254fdf96970cd First commit Manifests for Puppet Enterprise This file will contain the manifest required. Manifest will be created on an external machine and pulled to the server then tested.
+c546b2da48c012cb3a971bda72a87419dfc89dac Initial commit
