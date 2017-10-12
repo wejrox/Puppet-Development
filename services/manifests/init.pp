@@ -15,8 +15,9 @@ class services {
     require => Package['httpd'],
   }
   # Subscribe to service (restart on file change)
-  ~> service { 'httpd' :
-    ensure => running,
-    enable => true,
+  -> service { 'httpd' :
+    ensure    => running,
+    enable    => true,
+    subscribe => File['/etc/httpd/conf/httpd.conf'],
   }
 }
