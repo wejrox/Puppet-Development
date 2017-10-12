@@ -8,7 +8,7 @@ class openssh {
 
   # Overwrite sshd_config with custom one. 
   # Augeas cannot handle commenting.
-  file { '/etc/ssh/sshd_config':
+  ~> file { '/etc/ssh/sshd_config':
     ensure  => present,
     notify  => Service['sshd'],
     mode    => '0777',
