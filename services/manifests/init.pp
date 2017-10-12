@@ -1,6 +1,11 @@
 # Handles management of services, and initial setup
 class services {
-  service { 'httpd' :
+  file {'/var/www/s3540510':
+    ensure => 'directory',
+    owner  => 'root',
+    mode   => '0600',
+  }
+  -> service { 'httpd' :
     ensure => running,
     enable => true,
   }
