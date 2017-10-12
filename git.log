@@ -1,0 +1,699 @@
+commit 0138533ce9d5a36bdd3234f6c9f20820ffc7ecb6
+Author: Puppet Master <s3540510@student.rmit.edu.au>
+Date:   Thu Oct 12 11:52:19 2017 +0000
+
+    Added log from puppet agent run
+
+commit 4a5281270fc6927c94c2cde142b2aaf487aa84f8
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 22:50:11 2017 +1100
+
+    Updated report, httpd dir
+    
+    Report now formatted.
+    httpd dir is ensured existence.
+
+commit 8dec83b1cbd4ce03e23accf28a169b48513391cc
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 13:45:50 2017 +1100
+
+    Added report of decisions made
+    
+    A report is required, dictating the code used and why I used it.
+
+commit 4a57eb3d226b58f36d2bd058174cb62731084107
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 11:35:52 2017 +1100
+
+    Httpd ensure running added
+
+commit f84f6bb50ea7c8f6dc78e662050168e6f5100752
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 11:29:21 2017 +1100
+
+    Renamed agent_runinterval, subscribed httpd to file
+    
+    Agent run interval function clarified.
+    Httpd now subscribed to httpd.conf file.
+
+commit 37ca708ab66450f01cf2b66573e7505fa6094fea
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 00:55:58 2017 +1100
+
+    Updated to give becca sudo privileges
+    
+    Becca's priv's were not working, fixed
+
+commit 2dd395478e830dbdb4e3182852919a39de009add
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 00:40:41 2017 +1100
+
+    Conform to style guide
+    
+    Apparently they're meant to be in their own folders?
+
+commit 34a025572ed03f5c7a89f67031dafe6f00b28d02
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 00:32:04 2017 +1100
+
+    Further updating for puppet-lint
+    
+    All classes now documented
+
+commit ebecb652c4c9ce24700f888111db059caf3b15c1
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 00:26:54 2017 +1100
+
+    Further updating for puppet-lint
+    
+    It's worth 10 marks you know?
+
+commit 8b624845bdb46490f5cfb81933fb1d6436d155d6
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 00:21:50 2017 +1100
+
+    Further updating for puppet-lint
+
+commit 13631ed42869bbfb97ef89f909009d12808f47ba
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 00:13:26 2017 +1100
+
+    Updating to fit puppet-lint
+    
+    Puppet lint is pretty pedantic!
+
+commit ad66d2000ce89895a7bd2e05df1c5c3104821b5d
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Thu Oct 12 00:01:22 2017 +1100
+
+    Removed agent_login.sh
+    
+    No longer needed as file creation handled in iniConfig.pp
+
+commit a15ee3dc2380e1dd55048492de55d3d31b4f4c38
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 23:57:45 2017 +1100
+
+    Fixed syntax errors
+
+commit 3052ba621fd2b32af9c5a330673f16bbb95f4d95
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 23:53:12 2017 +1100
+
+    Attempting to create shell script from scratch
+    
+    Trying not to use a predefined shell script for the agent message.
+
+commit e796fb3a9ff6fd98ca8c8b8d33598a37b5e01b5b
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 23:48:18 2017 +1100
+
+    Added MOTD shell script
+    
+    Script should execute on agent login, informing of login time and date.
+
+commit deae8db406540db0e22ed0b319f94c8c9b2261e2
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 23:11:45 2017 +1100
+
+    Another attempt at mounting password
+
+commit a7bfa0d97d46566fcc49cc76ad1532a863f77e72
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 22:04:56 2017 +1100
+
+    Encapsulated mounting password
+    
+    Password is creating a new line for some reason, still attempting to fix
+
+commit 86f52830947d36bdbab923e1f47ce10bfe966465
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 20:46:17 2017 +1100
+
+    Password for mounting updated
+
+commit f1887888d1e47eb025d78d95b931648ce5b164f2
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 20:35:24 2017 +1100
+
+    Password for mounting updated
+    
+    Password may have contained new line, attempting to fix it.
+
+commit a178a6ab0d5f1b086ff441cd08f1dd6027b16baa
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 20:18:24 2017 +1100
+
+    Password for mounting updated
+    
+    Variable was not being dereferenced correctly
+
+commit 4a5ddd48771e0b169a20000255e596f0daee02c4
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 18:30:47 2017 +1100
+
+    Wilma key updated, password given for mounting
+    
+    Wilma's key is now run straight after the user is created.
+    A file now exists that will specify what the password for sshfs shall be.
+
+commit 592c5121311f2d6c949998fedf610d29767342e9
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 18:05:49 2017 +1100
+
+    Fixed syntax error for sshfs
+
+commit 06deaa713d07cb2132314d82f9f18878977b66e4
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 17:46:33 2017 +1100
+
+    Qualified command
+
+commit b1c61f39d7972927eeb2cce23151b3da03706c07
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 17:37:55 2017 +1100
+
+    SSHFS 4
+
+commit 070645b4aaef675f9e81d87da42a093b3df8a006
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 17:33:29 2017 +1100
+
+    SSHFS 3
+
+commit dd4cd23c52785ca5a6e2a08d4732b45d6378db19
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 17:24:08 2017 +1100
+
+    Attempt at fixing SSHFS 2
+    
+    attempting to bypass request for confirmation
+
+commit 6d144719bcb6cad976faad73cec2e40857e9e25f
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 17:20:04 2017 +1100
+
+    Fixed passwords, attempt at fixing SSHFS
+    
+    Passwords need to be SHA-1 using 'openssl passwd -1'  in terminal before pasting into manifest.
+    SSHFS had incorrect file path name.
+
+commit 94be45e874f2d9ddffc93d50b28294330ddf94ff
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 16:48:51 2017 +1100
+
+    Attemping to sha1 password
+
+commit 6bfdb06f7d7ce50c59fa50d3a138b1b2e92c904f
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 16:40:34 2017 +1100
+
+    Removed encryption, errors
+
+commit 55a1d2e6e4dead85abb3eaa57d19cd149cdd5404
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 16:24:08 2017 +1100
+
+    Titan fix
+
+commit 8b8fb9bb256da1eb04348d7f29689f5b9c9fafd6
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 16:21:16 2017 +1100
+
+    Syntax error
+
+commit 328da6227c1c467dee013ea6c0267661a8d55eda
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 16:18:07 2017 +1100
+
+    User passwords now encrypted
+    
+    Passwords now encrypted with sha1.
+    Not a good option but due to assignment restrictions it's all we can do.
+    Attempting to fix sshfs parsing issues.
+
+commit b061a15223a54182ae2c9c026079e13d40fd4713
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 15:36:31 2017 +1100
+
+    Titan directory mounts over becca
+    
+    Becca now has access to RMIT Titan home directory.
+
+commit cfcc1419f8ac063487dd4f7895904021231049f8
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 15:23:51 2017 +1100
+
+    Sudo group did not exit
+    
+    Changed becca from sudo to root
+
+commit bd0550d80d0b0cdb1b71794729ea4ce5a2631d75
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 15:20:50 2017 +1100
+
+    Typo in file location
+
+commit febca6decfe20296096685dcd03dd1d6f6df131c
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 15:06:19 2017 +1100
+
+    Gave Becca sudo privileges
+    
+    Becca now has privileges via sudoers file editing.
+
+commit f87906b988d58b93f2d778f24d12f769e1afcd1b
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 14:58:44 2017 +1100
+
+    Gave user Fred wheel privileges
+    
+    Fred requires privileges as per assignment spec.
+    Wheel achieves this on some unix systems, which is the most viable option given the constraints
+
+commit 494d94cda7014f6aef66d8568bbfde0805a1a570
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 14:19:43 2017 +1100
+
+    Customised httpd.conf, updated services.pp
+    
+    Httpd.conf is now set up to overwrite previous configuration file.
+    Services.pp now overwrites the file instead of trying to augeas.
+    Added some comments
+
+commit affdc41f22c6c1e8fd7baaf65da0a043f661f777
+Author: Puppet Master <s3540510@student.rmit.edu.au>
+Date:   Wed Oct 11 03:13:12 2017 +0000
+
+    Added copy of httpd.conf
+
+commit a712329dd51e8728be5c8a496448eb4fdd7c15e7
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 14:06:10 2017 +1100
+
+    Reverted back to copying sshd_conf over
+
+commit 94c1a9341cf687f88cbf963eafd3663f2dfac868
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 14:00:36 2017 +1100
+
+    OpenSSH now replaces sshd_conf file directly
+
+commit f052c9d451c12d54276fb4667d34eef09262049b
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 13:59:18 2017 +1100
+
+    Updated to openssh-server
+
+commit aa9fd81cf64cca59d2c80ac1457b98df3cd3ef85
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 13:27:23 2017 +1100
+
+    MySQL Server error fix
+
+commit 732dd1bce1df1b831c2ce651001b25abfc3c1eb9
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 13:22:26 2017 +1100
+
+    MySQL Server already installed error
+
+commit f7b8ba57e2fbd48ed92cd1c5f65ff289432e09c8
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:55:59 2017 +1100
+
+    Openssh is not called openssh-server, fixed
+
+commit 03701b7dc0230f5dd32e4f23232c7875a3a4688f
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:53:53 2017 +1100
+
+    Removed mode as AugeAs doesn't support
+
+commit ea2c95313d71d2abdd1e5a8f8a026587b1775891
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:52:58 2017 +1100
+
+    Fixed augeas syntax error 3
+    
+    missing comma
+
+commit e77d1123623363a7ea499e1fba108c282accdd78
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:51:56 2017 +1100
+
+    Fixed augeas syntax error 3
+
+commit ffabd5c17f48bcaacc0ac03cf55c2f6e258fa096
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:51:07 2017 +1100
+
+    Fixed Augeas syntax error 2
+
+commit e4a9e9149711cfcf211814b030df1f3c8b1e3981
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:47:04 2017 +1100
+
+    Fixed Augeas syntax error
+
+commit a4b39caa51aece6836e70b5aa2812523ec6b4789
+Merge: 9c07f88 e7d710f
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:45:49 2017 +1100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 9c07f8800e1fa88e13c9613f7a95d4520a78e6d9
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:45:30 2017 +1100
+
+    Edited openssh, packages, added services manifest
+    
+    openssh.pp now directly augeas the file.
+    Renamed services to packages to QoL.
+    Moved service setup to its own manifest.
+
+commit a54130b37f64b4c70e435fe6c4ef7711fbcb1f23
+Author: Puppet Master <s3540510@student.rmit.edu.au>
+Date:   Wed Oct 11 01:24:58 2017 +0000
+
+    Added a config file for sshd
+    
+     File to be used as a template to disable root access.
+
+commit e7d710f797b56b94a8b39d8a7eeb2dc3d1d1dc89
+Author: Puppet Master <s3540510@student.rmit.edu.au>
+Date:   Wed Oct 11 01:24:58 2017 +0000
+
+    Added a config file for sshd to be used as a template to disable root access.
+
+commit 5b431dd3d578e262986eba9653cc61d6c46107e2
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 12:22:59 2017 +1100
+
+    Added MySql server
+    
+    Package for MySql server now included.
+
+commit 6b114153aa9b389f72d6a6efe34733eca814fb29
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 11 11:34:40 2017 +1100
+
+    Added build from source, updated SSHFS
+    
+    Created a define to build a package given with options provided, should clear up code.
+    Attempting to install SSHFS again, changed to install more dependencies using YUM.
+
+commit c9fad8303432c9774fb7614640c14ea480e8b6d7
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 20:02:01 2017 +1100
+
+    Test attempt
+    
+    Trying to run without using sshfs
+
+commit 2d874113f6ee9b9da2683aec1bfb88fe72733e2b
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 19:58:03 2017 +1100
+
+    Fixed some syntax
+    
+    Syntax for some packages was off, also updated download links
+
+commit 5a7b5b0ddca2c9d3f224fafbc6fd7f3a67811c5f
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 19:21:36 2017 +1100
+
+    Added glib dependency
+
+commit 3ed2c9b74c5f8394cc367c12a14d5db094f955f1
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 19:05:50 2017 +1100
+
+    Added another fuse dependency
+
+commit ab37e1b8669a05884b069a36a0dd7831a095591d
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 17:23:33 2017 +1100
+
+    Fixed fuse dependency
+
+commit 400366d6a9821f5de3a66bc2694691f4b23c07c5
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 17:22:06 2017 +1100
+
+    Added fuse dependency
+
+commit 2b628bc96144fe19b2b6ad04a114dc8cd09f1306
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 17:19:30 2017 +1100
+
+    Added fuse-sshfs support
+    
+    Package installed via rpm
+
+commit 39b17fd06f50d88edb8f49d83e2c82d8abc2b1c3
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 17:13:02 2017 +1100
+
+    Added custom cgdb, deps
+    
+    CGDB now installed.
+    Dependencies updated for dia2code.
+
+commit 3bcf452bf842864318f2d1230d5a2a4636e510d6
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 16:43:43 2017 +1100
+
+    Updated packages 2
+
+commit f0367a76903dbc505cad488fafe503d29c14665a
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 16:25:48 2017 +1100
+
+    Updated packages
+    
+    Attempting specifying RPM to handle https download.
+
+commit aaa57d4b12d4a7e49a40fe4cf3a2fd6f4cf2e302
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 16:15:13 2017 +1100
+
+    Properly supported runlevel 3
+    
+    Default runlevel no longer uses the configuration file at all, so manifest has been updated.
+
+commit ffeca5f005acdbc27229887f5933bb81049768b7
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 15:41:35 2017 +1100
+
+    Augeas update 4
+    
+    Attempting to fix augeas for runinterval
+
+commit d16944d23139d4f98f2655733a47853906ebd5bd
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 15:37:42 2017 +1100
+
+    Fixed file path error
+
+commit afd10c5bb19a775715988324ce5a61fb7fdd02d3
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 14:52:52 2017 +1100
+
+    Fixed syntax error
+
+commit cdbacbb0f676b3982470025f5c317ef33ea8b5fa
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 14:50:50 2017 +1100
+
+    Added Host Support and Openssh, additional testing
+    
+    RMIT Jupiter, Saturn, Titan added to hosts.
+    OpenSSH is now supported.
+    Attempting to specify package source location (URL) for package installation.
+
+commit c878eff132a4040116050e3431f29dd16b7255a3
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Oct 10 14:10:20 2017 +1100
+
+    Added MOTD, /usr/local/bin, deps
+    
+    Message of the day now informs when client is accessed.
+    /usr/local/bin now included in user file path.
+    Dependencies have been updated for packages.
+
+commit be87f483543aa5ba6e29aa93d97e3029c87e8d2b
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 23:50:27 2017 +1100
+
+    Updated exec again
+    
+    Trying to change quotes?
+
+commit b1767f32a33836d2f03de9293a095172b24a48a3
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 23:38:33 2017 +1100
+
+    Updated exec
+    
+    As Dia2Code does not exist on Yum, it must be installed via exec.
+
+commit 47612bbb5d21ba37e777933a49971ae26d0a2520
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 23:22:20 2017 +1100
+
+    Changed package names
+    
+    Package names have been updated for testing with Yum
+
+commit d8e4e98068bc100373a37d63213228ecdc1246ee
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 22:17:09 2017 +1100
+
+    Bug fixes
+    
+    Augeas set fixed (required a ' ' but received a '=')
+    Set provider to apt for packages.
+
+commit e1fac6bc96daa8677d89e4409dfa5df6ca91034b
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 21:55:07 2017 +1100
+
+    Augeas update 3
+    
+    removed requirement for puppet.conf to exist as it should always exist
+
+commit 7d27d5ad15111928ba28e3f3a04d1711fbe27f1c
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 21:52:55 2017 +1100
+
+    Augeas update 2
+    
+    Attempt 2 at making augeas work
+
+commit d8d50ce47a278b1cff51ce78e3eaa4d28132e7e5
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 21:49:09 2017 +1100
+
+    Augeas update
+    
+    Require puppet.conf was incorrect.
+
+commit 242738bd1faf87e726e3ef6a97506b3ff370c6cc
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 21:47:22 2017 +1100
+
+    Simplification
+    
+    Packages now simplified to save space and effectiveness
+
+commit b4d5ffadd3d561f3ada214c56a065bc573a447ac
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 21:40:10 2017 +1100
+
+    Changed iniConfig to augeas
+    
+    Updated iniconfig to now update run interval and also runlevel to 3
+
+commit 6874b72f9c8e2a807db43910904ac3e507ea8dae
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 21:27:12 2017 +1100
+
+    Changed user file
+
+commit e00f409d4941b7a92352b536adfbd4d9640f276e
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 20:42:09 2017 +1100
+
+    Changed iniFile
+
+commit a50a49b2d4e14c73ccd009d18e2eceeed68cf470
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 19:45:23 2017 +1100
+
+    Testing
+    
+    Testing manifest
+
+commit cd03bf75b37aa8aad364cce182fa7d231df8c93e
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Fri Oct 6 17:13:01 2017 +1100
+
+    Fixed CSH dependency, Agent check-in
+    
+    CSH is included in distro's, found proper location and updated user "fred".
+    Agent checkin set to every 20 mins (1200 secs)
+
+commit 6ff2b05006b9f2cf0204824c87384e6aee829fbb
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Wed Oct 4 14:13:42 2017 +1100
+
+    Added Agent Check-In
+    
+    Class now available for initialisation,
+    Agents will check in every 20mins (3 times an hour)
+
+commit e9e2000027a50f056df15d0950dd7d507b074bad
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Mon Oct 2 20:40:24 2017 +1100
+
+    Added puppet-lint package, README
+    
+    Added support for puppet lint
+    Updated readme file
+
+commit 38ca6be2af5509cceb5239352385ef8ff7af32cf
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Mon Oct 2 18:55:20 2017 +1100
+
+    Added encryption for Wilma
+    
+    user called Wilma is required to have encryption, now added.
+
+commit 0c3437b0476ba6e81190df94e7e97f8188041cd5
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Mon Oct 2 17:15:39 2017 +1100
+
+    Fixed syntax in packages.pp
+    
+    Number of lines missing a '>'
+
+commit cd8bcbcf3ad423e856602f29152146699dce6adc
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Mon Oct 2 17:13:55 2017 +1100
+
+    Fixed syntax error
+    
+    Error for user has been fixed, missing a ','
+
+commit 3bf6504d5a020a5a0164c6c1892da4802c3a467d
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Mon Oct 2 17:11:56 2017 +1100
+
+    Added basic scripts for users and packages
+    
+    Created the basic scripts for users, including groups.
+    Packages also created, all run on boot.
+    Haven't specified run level 3 yet.
+
+commit 42132df2fb2538c5759576b2d06fcbe058810771
+Merge: 38fc099 c546b2d
+Author: Puppet Master <s3540510@student.rmit.edu.au>
+Date:   Sun Oct 1 10:29:27 2017 +0000
+
+    Merge branch 'master' of https://github.com/wejrox/puppet-development
+    Set up
+
+commit 38fc099dae3ee09994dbe56c9e0254fdf96970cd
+Author: root <root@ip-172-31-8-159.us-west-2.compute.internal>
+Date:   Sun Oct 1 09:59:05 2017 +0000
+
+    First commit
+    Manifests for Puppet Enterprise
+    This file will contain the manifest required. Manifest will be created on an external machine and pulled to the server then tested.
+
+commit c546b2da48c012cb3a971bda72a87419dfc89dac
+Author: Unknown <pomy_jamie@hotmail.com>
+Date:   Tue Sep 19 11:25:45 2017 +1000
+
+    Initial commit
