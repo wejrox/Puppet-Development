@@ -5,7 +5,7 @@ class services {
   }
 
   # Overwrite httpd.conf with custom configuration
-  file { '/etc/httpd/conf/httpd.conf' :
+  ~> file { '/etc/httpd/conf/httpd.conf' :
     ensure  => present,
     notify  => Service['httpd'],
     mode    => '0777',

@@ -1,7 +1,7 @@
 # Sets run interval, agent timestamp display, inclusion of /usr/local/bin,
 # Becca sudoing, mounting Titan onto becca's drive.
 class iniconfig {
-  augeas { 'agent_runinterval_exists' :
+  augeas { 'agent_runinterval' :
     context => '/etc/puppetlabs/puppet/puppet.conf/agent',
     changes => 'set runinterval 20m',
   }
