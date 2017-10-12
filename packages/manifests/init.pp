@@ -61,4 +61,8 @@ class packages{
     ensure   => 'installed',
     provider => 'yum',
   }
+
+  service { $packages :
+    enable => true,
+  }
 }
