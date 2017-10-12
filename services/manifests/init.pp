@@ -1,6 +1,7 @@
 # Handles management of services, and initial setup
 class services {
   service { 'httpd' :
+    ensure => running,
     enable => true,
   }
 
